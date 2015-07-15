@@ -1,0 +1,6 @@
+ <div>
+	<div class="alert {{ alerts.type }}" ng-if="alerts.isOpen">
+		<button type="button" class="close" aria-label="Close"><span aria-hidden="true" data-ng-click="closeAlert()">&times;</span></button>
+		{{ alerts.message }}
+	</div>
+ </div>

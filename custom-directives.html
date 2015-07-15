@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Directive Demos</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+	<style type="text/css">
+	.panel-heading-ovrd{
+		overflow: hidden;
+	}
+	</style>
+</head>
+<body>
+<div class="container" data-ng-app="customDirectiveApp" data-ng-controller="DemoController">
+	<h1>Custom Directive Page</h1>
+	<button class="btn btn-info" data-ng-click="toggleAlert('danger');">Open Alert</button>
+	<custom-directive data-alerts="danger" data-alert="alert-danger" data-message="I am danger alert" data-dismiss="toggleAlert('danger')"></custom-directive>
+	<button class="btn btn-info" data-ng-click="toggleAlert('success');">Open Alert</button>
+	<custom-directive data-alerts="success" data-alert="alert-success" data-message="I am success alert" data-dismiss="toggleAlert('success')"></custom-directive>
+	<button class="btn btn-info" data-ng-click="toggleAlert('info');">Open Alert</button>
+	<custom-directive data-alerts="info" data-alert="alert-info" data-message="I am info alert" data-dismiss="toggleAlert('info')"></custom-directive>
+	<button class="btn btn-info" data-ng-click="toggleAlert('warning');">Open Alert</button>
+	
+
+	<custom-directive data-alerts="warning" data-alert="alert-warning" data-message="I am warning alert" data-dismiss="toggleAlert('warning')"></custom-directive>
+
+
+	<button class="btn btn-info" data-ng-click="toggleAlert('danger1');">asjdhasjdgjs</button>
+	<custom-directive data-alerts="danger1" data-alert="alert-danger" data-message="Invalid username / password" data-dismiss="toggleAlert('danger1')"></custom-directive>	
+</div>
+</body>
+<script type="text/javascript" src="lib/angular/angular.js"></script>
+<script type="text/javascript" src="js/custom-directives.js"></script>
+</html>
